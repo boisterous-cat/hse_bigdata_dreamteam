@@ -109,9 +109,10 @@ exit #выход из под юзера
 ```
 #### 4.2 Создаем копию конфигурации
 
+```bash
 sudo cp /etc/nginx/sites-available/nn /etc/nginx/sites-available/ya
 sudo cp /etc/nginx/sites-available/nn /etc/nginx/sites-available/dh
-
+```
 
 #### 4.3 Редактируем файл конфигурации:
 
@@ -141,17 +142,17 @@ sudo vim /etc/nginx/sites-available/dh
 
 #### 4.6 Вставляем следующую конфигурацию:
 
-   Меняем порт 9870 на 19888.
+Меняем порт 9870 на 19888.
 
-   Итог примерно такой:
+Итог примерно такой:
 
-   ```nginx
-   server {
-       listen 19888 default_server;
-       # try_files $uri/=404;
-       proxy_pass http://team-27-nn:19888;
-   }
-   ```
+```nginx
+server {
+   listen 19888 default_server;
+   # try_files $uri/=404;
+   proxy_pass http://team-27-nn:19888;
+}
+```
 #### 4.7 Создаем символическую ссылку для активации конфигурации:
 
 ```bash
