@@ -266,8 +266,8 @@ team-27-dn-01
 #### 6.1 Копируем файл `.profile`:
 
 ```bash
-scp ~/profile team-27-dn-00:/home/hadoop
-scp ~/profile team-27-dn-01:/home/hadoop
+scp ~/.profile team-27-dn-00:/home/hadoop
+scp ~/.profile team-27-dn-01:/home/hadoop
 ```
 
 #### 6.2 Копируем файл `hadoop-env.sh`:
