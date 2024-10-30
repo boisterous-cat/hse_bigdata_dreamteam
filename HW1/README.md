@@ -333,11 +333,10 @@ jps
 
 Настроим Nginx на Jump Node.
 
-Переходим на Jump Node
+Переходим на Jump Node под обычным пользователем.
 
 ```bash
 ssh team-27-jn
-sudo -i -u hadoop
 ```
 
 #### 8.1 Настройка Nginx для NameNode
