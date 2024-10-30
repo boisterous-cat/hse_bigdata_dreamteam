@@ -209,7 +209,7 @@ export
 Далее мы редактируем конфигурационный файл _core-site.xml_, чтобы указать URL для NameNode:
 
 ```bash
-sudo vim core-site.xml
+vim core-site.xml
 ```
 
 Затем добавляем несколько строк в файл и сохраняем его:
