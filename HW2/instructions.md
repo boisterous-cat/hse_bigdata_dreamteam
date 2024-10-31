@@ -177,6 +177,8 @@ sudo systemctl reload nginx
 
 После обращения по данному адресу убедимся, что все запущено верно:
 
-![8088](https://github.com/user-attachments/assets/d5714700-2a93-44d3-9d31-882edc508c92)
+![8088](https://github.com/user-attachments/assets/1fd2f22f-d5d8-423a-be61-8cfc3b1a52a8)
 
-![hadoop 19888](https://github.com/user-attachments/assets/3f1e4869-1bb5-4ad1-81a4-fa02913c4a56)
+
+![hadoop 19888](https://github.com/user-attachments/assets/ecf45d0a-96bf-4d39-8f6f-ee20c3596434)
+
