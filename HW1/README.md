@@ -40,10 +40,10 @@ sudo vim /etc/hosts
 #ff00::0 ip6-mcastprefix
 #ff02::1 ip6-allnodes
 #ff02::2 ip6-allrouters
-192.168.1.110   team-27-jn
-192.168.1.111   team-27-nn
-192.168.1.112   team-27-dn-00
-192.168.1.113   team-27-dn-01
+<jumpnode-ip>   team-27-jn
+<namenode-ip>   team-27-nn
+<datanode1-ip>   team-27-dn-00
+<datanode2-ip>   team-27-dn-01
 ```
 
 Проверяем, что мы всё сделали правильно:
@@ -84,7 +84,7 @@ vim .ssh/authorized_keys
 Добавляем в этот файл все предварительно сохраненные ключи (от Jump Node, Name Node, Data Node-00, Data Node-01). Пример:
 
 ```bash
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDqoPBUVpmQHwv10pTBRrbtWyaWyuz5Avj8AfAx9b44m
+ssh-ed25519 AAAAC3***C1lZDI1NTE5****IDqoPBUVpmQHwv***TBRrbtWyaW***5Avj8AfAx9b56m
 ```
 
 #### 2.3 Распространим файл `authorized_keys` на все ноды через `scp` (необходимо ввести пароль от пользоватлей hadoop на каждой ноде):
